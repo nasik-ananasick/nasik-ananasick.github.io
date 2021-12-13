@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="сайт.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="Footer-with-button-logo.css">
+
+	<title></title>
+</head>
+
+<body>
+	<div class="abc">
+		<header class="header">
+			<div class="container">
+				<a href="index.html"><img src="logo.svg" class="logo"></a>
+				<div class="header_menu menu">
+					<div class="icon">
+						<span></span>
+					</div>
+					<nav class="menu_body">
+						<ul class="list">
+							<li><a href="about.html" class="link">О нас</a></li>
+							<li><a href="zali.html" class="link">Залы</a>
+                                <span class="menu__arrow"></span>
+								<ul class="sublist">
+									<li><a href="zal1.html" class="sublink">Зал Прованс</a></li>
+									<li><a href="zal2.html" class="sublink">Зал Loft</a></li>
+									<li><a href="zal3.html" class="sublink">Зал Family</a></li>
+									<li><a href="zal4.html" class="sublink">Зал Лир</a></li>
+								</ul></li>
+							<li><a href="uslugi.html" class="link">Услуги</a></li>
+							<li><a href="oplata.html" class="link">Стоимость</a></li>
+							<li><a href="rules.html" class="link">Правила студии</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+
+			<section class="section">
+
+				<div class="slider">
+					<div class="item">
+						<img src="/photozals/1_2.jpg" alt="Первый слайд">
+					</div>
+				
+					<div class="item">
+						<img src="/photozals/2_1.jpg" alt="Второй слайд">
+					</div>
+				
+					<div class="item">
+						<img src="/photozals/3_4.jpg" alt="Третий слайд">
+					</div>
+
+					<div class="item">
+						<img src="/photozals/1_3.jpg" alt="Четвёртый слайд">
+					</div>
+
+					<div class="item">
+						<img src="/photozals/1_4.jpg" alt="Пятый слайд">
+					</div>
+
+					<div class="item">
+						<img src="/photozals/2_4.jpg" alt="Шестой слайд">
+					</div>
+
+					<div class="item">
+						<img src="/photozals/3_3.jpg" alt="Седьмой слайд">
+					</div>
+
+					<div class="item">
+						<img src="/photozals/2_2.jpg" alt="Восьмой слайд">
+					</div>
+				
+					<a class="prev" onclick="minusSlide()">&#10094;</a>
+					<a class="next" onclick="plusSlide()">&#10095;</a>
+				
+				</div>
+				
+				
+
+			</section>
+
+			<div class="slider-dots">
+				<span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+				<span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+				<span class="slider-dots_item" onclick="currentSlide(3)"></span>
+				<span class="slider-dots_item" onclick="currentSlide(4)"></span>
+				<span class="slider-dots_item" onclick="currentSlide(5)"></span>
+				<span class="slider-dots_item" onclick="currentSlide(6)"></span>
+				<span class="slider-dots_item" onclick="currentSlide(7)"></span>
+				<span class="slider-dots_item" onclick="currentSlide(8)"></span> 
+			</div>
+
+			<section class="section">
+				<div class="content">
+				<p>"BackGround" это интерьерная фотостудия с большим количеством залов для всех видов фотосессий. Наша студия подходит для семейных, индивидуальных, love story и свадебных фотосессий, а так же beauty и fasion съемок.</p>
+				<p> При аренде залов на большое количество часов пространство может быть трансформировано в зависимости от вашей задачи, например для рекламных фотосессий и видеосъемок.</p>
+				<p> В нашей фотостудии, помимо вспышек, можно снимать с естественным светом из окон, а для съемок со вспышками или постоянным видеосветом окна наглухо зашториваются.</p>
+				<p> Мы открыты для проведения мастер-классов и других мероприятий с большим количеством участников.</p>
+				<p> Мы всегда идем на встречу и прислушиваемся к Вашим потребностям.</p>
+			</div>
+
+				
+
+			</section>
+
+			<section class="section" >
+				<h1 style="text-align: center; padding-top: 2%;">Наше портфолио</h1>
+
+
+				<grig class="gr1">
+					<img src="портфолио/1.jpg" class="port">
+					<img src="портфолио/2.jpg" class="port">
+					<img src="портфолио/7.jpg" class="port">
+					<img src="портфолио/5.jpg" class="port">
+					<img src="портфолио/3.jpg" class="port">
+					<img src="портфолио/8.jpg" class="port">
+					<img src="портфолио/4.jpg" class="port">
+					<img src="портфолио/9.jpg" class="port">
+					<img src="портфолио/10.jpg" class="port">
+
+				</grig>
+
+				<!--Портфолио-->
+
+			</section>
+			
+		</main>
+
+		<footer id="myFooter">
+			<div class="1">
+				<a href="index.html"><img src="logo.svg" style="width: 350px;"></a>
+				<div class="row">
+						
+					<div class="col-sm-2">
+						<h5>Главная</h5>
+						<ul>
+							<li><a href="index.html">Вернуться на главную</a></li>
+							<li><a href="#">Отзывы</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-2">
+						<h5>Адрес</h5>
+						<ul>
+							<li>г. Минск, ул Волгоградская 8, 1 этаж</li>
+							<li>г. Минск, ул Октябрьская 16/4</li>				
+							
+
+						</ul>
+					</div>
+					<div class="col-sm-2">
+						<h5>Контакты</h5>
+						<ul>
+							<li>+375 (29) 877-22-26</li>
+							<li>+375 (44) 485-69-60</li>
+						</ul>
+					</div>
+					<div class="col-sm-3">
+						<div class="social-networks">
+							<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+							<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+							<a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+						</div>
+						<button type="button" class="btn btn-default">Свяжитесь с нами</button>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="сайт.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+</body>
+</html>
