@@ -91,7 +91,6 @@
 			left: 0;
 			width: 100%;
 			z-index: 10;
-			/*background-color: #3c3d41;*/
 			background-image: url(фон.jpg);
 			background-attachment: fixed;
 		}
@@ -240,7 +239,7 @@
 				 margin-left: auto;
 				 margin-right: auto;
 				 height: 300px;
-				 width: 434px;
+				 width: 431px;
 			 }
 			 .gr {
 				 min-height: 500px;
