@@ -64,6 +64,7 @@
 								
 								<p class="photozal1text">   Окна выходят на восточную сторону, это светлая комната с мягким естественным освещением, утром там появляются яркие солнечные лучи.</p>
 								<button type="button" class="podr btn-default"><a href="zal1.html" class="link">Подробнее</a></button>
+								<a href='#form-wrap'><button onclick='openForm()' class="podr btn-default">Забронировать</button></a>
 							</td>
 						</tr>
 					</table>	
@@ -78,6 +79,7 @@
 
 								<p class="photozal1text">   Окна выходят на западную сторону, днем там мягкое естественное освещением, после обеда появляются яркие солнечные лучи. Из предметов мебели есть кожаное кресло с высокой спинкой, диван-честер, бордовый барный (высокий) стул, точно такой же стул, только низкий.</p>
 								<button type="button" class="podr btn-default"><a href="zal2.html" class="link">Подробнее</a></button>
+								<a href='#form-wrap'><button onclick='openForm()' class="podr btn-default">Забронировать</button></a>
 							</td>
 							<td class="photozal1text">
 							<img src="/photozals/2_2.jpg"alt="" class="photozal1">
@@ -99,6 +101,7 @@
 
 								<p class="photozal1text">   Окна выходят на западную сторону, в летнее время это светлая комната с мягким естественным освещением, после обеда в солнечный день там появляются яркие солнечные лучи.</p>
 								<button type="button" class="podr btn-default"><a href="zal3.html" class="link">Подробнее</a></button>
+								<a href='#form-wrap'><button onclick='openForm()' class="podr btn-default">Забронировать</button></a>
 							</td>
 						</tr>
 					</table>	
@@ -114,7 +117,10 @@
 								<p class="photozal1text">Площадь всей съемочной локации 70 кв.м.</p>
 
 								<p class="photozal1text">Окна выходят на западную сторону, днем там мягкое естественное освещением, после обеда появляются яркие солнечные лучи.</p>
+								<div >
 								<button type="button" class="podr btn-default"><a href="zal4.html" class="link">Подробнее</a></button>
+								<a href='#form-wrap'><button onclick='openForm()' class="podr btn-default">Забронировать</button></a>
+							</div>
 							</td>
 							<td class="photozal1text">
 							<img src="/photozals/4_1.jpg"alt="" class="photozal1">
@@ -124,9 +130,10 @@
 					</table>
 				</section>
 
+
+				
 				<section class="section">
-					<grid class="gr">
-					<img src="форма1.jpg" style="width: 95%; padding-top: 5%;">
+					<div id='form-wrap' class="content">
 				<form class="form">
 					<header><h3 style="text-align: center;">Заявка на бронирование зала</h3></header>
 					
@@ -164,7 +171,7 @@
 					<label></label>
 					<input type="button" value="Оформить заявку" class="Button"/>
 					</form>
-				</grid>
+					</div>
 				</section>
 
 			</main>
