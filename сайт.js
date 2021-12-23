@@ -55,34 +55,6 @@
 		}
 
 
-
-
-		const menuLinks = document.querySelectorAll('.link[data-goto]');
-		if (menuLinks.length > 0) {
-			menuLinks.forEach(menuLink => {
-			menuLink.addEventListener("click", onMenuLinkClick);
-		}); 
-
-		function onMenuLinkClick (e) {
-			const menuLink = e.target;
-			if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
-				const gotoBlock = document.querySelector(menuLink.dataset.goto);
-				const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight
-				
-				if (iconMenu.classList.contains('_active')) {
-					document.body.classList.remove('_lock');
-					iconMenu.classList.remove('_active');
-					menuBody.classList.remove('_active');
-				}
-
-				window.scrollTo({
-					top: gotoBlockValue,
-					behavior: "smooth"
-				});
-				e.preventDefault();
-			}
-		}
-	}
 	document.addEventListener('DOMContentLoaded', function () {
 		const slider = new ChiefSlider('.slider', {
 		  loop: true,
@@ -92,7 +64,45 @@
 	  });
 
 	  const formWrap = document.getElementById('form-wrap');
+	  const formOpen = document.getElementById('open');
 
 function openForm() {
     formWrap.classList.add('open');
+	formOpen.classList.add('cl');
+}
+function closeForm() {
+	formWrap.classList.remove('open');
+	formOpen.classList.remove('cl');
+}
+
+function Modal() {
+
+	// Функция открытия модального окна
+
+	$(".modal-link").on("click", function() {
+
+		$('.modal-overlay[data-modal-id="'+$(this).data('modal-id')+'"]').addClass("modal-overlay_visible");
+
+	});
+
+	// Функция закрытия модального окна нажатием на кнопку
+
+	$(".modal__close").on("click", function() {
+
+		$(".modal-overlay").removeClass("modal-overlay_visible");
+
+	});
+
+	// Функция закрытия модального окна нажатием вне окна
+
+	$(document).on("click", function(e) {
+
+		if(!$(e.target).closest(".modal").length && !$(e.target).closest(".modal-link").length && $(e.target).closest(".modal-overlay").length) {
+
+			$(".modal-overlay").removeClass("modal-overlay_visible");
+
+		}
+
+	});
+
 }

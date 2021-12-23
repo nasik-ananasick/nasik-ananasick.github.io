@@ -44,10 +44,7 @@
 
 			
 		}
-		/*img{
-			max-width: 100%;
-			vertical-align: top;
-		}*/
+
 		.foto{
 			display: inline-flex;
 		}
@@ -262,6 +259,7 @@
 				justify-content: center;
 				align-items: center;
 			  }
+
 		}
 
 		@media (max-width: 767px) {
@@ -406,6 +404,7 @@
 				justify-content: center;
 				align-items: center;
 			  }
+			  
 
 		}
 
@@ -556,12 +555,6 @@ background-size: 100%;
 	height: 40%;
 	
 }
-.photozal1text{
-	position: relative;
-	padding-top: 17px;
-	line-height: 1.1;
-	font-size: 24px;
-}
 
 td {
 
@@ -610,6 +603,11 @@ ul.sublist{
 	 min-height: 1px;
 	 padding-right: 1%;
 	 padding-left: 1%;
+	 cursor: pointer;
+}
+
+.podr:hover{
+	text-decoration: underline;
 }
 
 .Z{
@@ -655,6 +653,26 @@ ul.sublist{
       display: block;
   }
 
+  #open{
+	  display: block;
+	  align-self: center;
+  }
+
+  #open.cl{
+	  display: none;
+  }
+
+  .close{
+	  text-align: center;
+	margin-left: 90%;
+	margin-top: 0;
+    display: block;
+    position: relative;
+    max-width: 50px;
+    max-height: 50px;
+	cursor: pointer;
+  }
+
 
 form{
 	color: white;
@@ -676,16 +694,13 @@ form{
 	}
 	input[type="text"],input[type="email"]{
 	background-color:rgba(255,255,255,.5);
-	/*color: rgba(255,255,255,.1);*/
 	box-shadow: inset 0 0 10px rgba(255,255,255,.75);
 	border-radius: 6px;
 	margin-top: 2%;
 	width: 40%;
 	height: 40px;
+	cursor: pointer;
 	}
-	/*input [type="radio"]{
-	margin-top: 4%;
-	}*/
 	input[type="date"],select{
 		background-color:rgba(255,255,255,.5);
 		color: rgba(34, 34, 34, 0.5);
@@ -694,6 +709,7 @@ form{
 		margin-top: 2%;
 		width: 40%;
 		height: 40px;
+		cursor: pointer;
 	}
 	
 	
@@ -708,6 +724,7 @@ form{
 		margin: 0 auto;
 		margin-top: 1%;
 		font-size: 24px;
+		cursor: pointer;
 	
 	}
 	.Button:hover{
@@ -718,11 +735,11 @@ form{
 	}
 
 p{
-	padding-bottom: 15px;
+	line-height: 1.25;
+	padding-bottom: 20px;
 }
 
 #myFooter {
-    /*background-color: #3c3d41;*/
     color: white;
     padding-top: 10px;
 }
@@ -785,15 +802,16 @@ p{
 }
 
 #myFooter .facebook:hover {
-    color: #006bc9;
+    color: #1a476e;
+}
+
+#myFooter .vk:hover {
+    color: #4563d0;
 }
 
 #myFooter .instagram:hover {
     color: #ff359a;
-}
-
-#myFooter .twitter:hover {
-    color: #00aced;
+	;
 }
 
 @media screen and (max-width: 767px) {
@@ -811,6 +829,130 @@ p{
 .col-sm-3, .col-sm-2{
    position: relative;
    display: inline-table;
+    min-height: 1px;
+    padding-right: 4%;
+    padding-left: 4%;
+}
+
+.modal-overlay * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.modal-overlay *:before,
+.modal-overlay *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .6);
+	overflow: auto;
+	z-index: 999;
+	transition: .4s all;
+	opacity: 0;
+	visibility: hidden;
+	cursor: pointer;
+}
+
+.modal-overlay_visible {
+	opacity: 1;
+	visibility: visible;
+}
+
+.modal-table {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.modal-table-cell {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding: 0 15px;
+}
+
+.modal {
+	transition: .4s all;
+	display: inline-block;
+	padding: 35px 45px 20px 30px;
+	max-width: 400px;
+	width: 100%;
+	background: #fff;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, .25);
+	color: #333;
+	text-align: left;
+	font-family: Arial;
+	margin: 30px 0;
+	transform: translate(0, 20%);
+	position: relative;
+	border-radius: 4px 6px 4px 4px;
+	cursor: auto;
+	font-size: 16px;
+}
+
+.modal-overlay_visible .modal {
+	transform: translate(0);
+}
+
+.modal__header {
+	font-size: 22px;
+	font-weight: 400;
+	padding: 0 0 30px 0;
+}
+
+.modal__content p {
+	padding: 0 0 10px 0;
+	margin: 0;
+}
+
+.modal__close {
+	position: absolute;
+	right: 10px;
+	top: 0;
+	background: #da4d43;
+	width: 25px;
+	height: 25px;
+	border-radius: 0 0 4px 4px;
+	transition: .4s all;
+}
+
+.modal__close:hover {
+	background: #ed5f55;
+	cursor: pointer;
+}
+
+.modal__close:before,
+.modal__close:after {
+	content: "";
+	display: block;
+	height: 16px;
+	width: 1px;
+	transform: rotate(45deg);
+	background: #fff;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+}
+
+.modal__close:after {
+	transform: rotate(-45deg);
+}
+
+.inf{
+	position: relative;
+   display: inline-block;
     min-height: 1px;
     padding-right: 4%;
     padding-left: 4%;
