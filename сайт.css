@@ -949,11 +949,3 @@ p{
 .modal__close:after {
 	transform: rotate(-45deg);
 }
-
-.inf{
-	position: relative;
-   display: inline-block;
-    min-height: 1px;
-    padding-right: 4%;
-    padding-left: 4%;
-}
