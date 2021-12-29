@@ -1,7 +1,9 @@
-"use strict"
+"use strict" //строгий режим
 
+		//инициализация переменной
 		const isMobile = {
 			Android: function () {
+				//возвращение значения Android, если пользователь пользуется данной версией браузера
 				return navigator.userAgent.match(/Android/i);
 			},
 			BlackBerry: function () {
@@ -27,6 +29,7 @@
 		};
 
 		if (isMobile.any()) {
+			// если версия браузера пользователя предназначена для телефона, присваивается класс ._touch
 			document.body.classList.add('_touch');
 
 			let menuArrows = document.querySelectorAll('.menu__arrow');
@@ -39,6 +42,7 @@
 				}
 			}
 		} else {
+			// в противном случае версия браузера пользователя предназначена для пк, присваивается класс ._pc
 			document.body.classList.add('_pc');
 		}
 

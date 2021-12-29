@@ -224,7 +224,7 @@
 				position: relative;
 				padding-right:15%;
 				padding-left: 15%;
-				padding-top: 3%;
+				padding-top: 30px;
 				padding-bottom: 4%;
 				font-size: 24px;
 				line-height: 1.4;
@@ -377,7 +377,7 @@
 				position: relative;
 				padding-right:5%;
 				padding-left: 5%;
-				padding-top: 3%;
+				padding-top: 30px;
 				padding-bottom: 4%;
 				font-size: 24px;
 				line-height: 1.4;
@@ -403,6 +403,10 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
+			  }
+
+			  ul.information{
+				  list-style: none;
 			  }
 			  
 
@@ -578,6 +582,7 @@ td {
 li.content{
 	list-style-type: circle;
 	padding-bottom: 1%;
+	margin-left: 30px;
 }
 ul.list,li.col-sm-2{
 	list-style: none;
@@ -802,15 +807,15 @@ p{
 }
 
 #myFooter .facebook:hover {
-    color: #1a476e;
+    color: #173d5f;
 }
 
 #myFooter .vk:hover {
-    color: #4563d0;
+    color: #3a5edf;
 }
 
-#myFooter .instagram:hover {
-    color: #ff359a;
+#myFooter .mail:hover {
+    color: #3f9efd;
 	;
 }
 
@@ -918,7 +923,7 @@ p{
 	position: absolute;
 	right: 10px;
 	top: 0;
-	background: #da4d43;
+	background: #d63f63;
 	width: 25px;
 	height: 25px;
 	border-radius: 0 0 4px 4px;
@@ -926,7 +931,7 @@ p{
 }
 
 .modal__close:hover {
-	background: #ed5f55;
+	background: #f57190;
 	cursor: pointer;
 }
 
