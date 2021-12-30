@@ -1,6 +1,6 @@
 "use strict" //строгий режим
 
-
+//определение типа устройства
 		const isMobile = { //добавляем методы
 			Android: function () {
 				return navigator.userAgent.match(/Android/i);
@@ -28,7 +28,7 @@
 		};
 
 		if (isMobile.any()) {
-			// еслииспользуется телефон, присваивается класс ._touch
+			// если используется телефон, присваивается класс ._touch
 			document.body.classList.add('_touch');
 
 			//выпадающее меню
@@ -48,6 +48,7 @@
 
 
 
+		//добавление/удаление классов _lock, _active при клике
 		const iconMenu = document.querySelector('.icon');
 		const menuBody = document.querySelector('.menu_body');
 		if (iconMenu) {
@@ -59,6 +60,7 @@
 		}
 
 
+	//функция слайдера
 	document.addEventListener('DOMContentLoaded', function () {
 		const slider = new ChiefSlider('.slider', {
 		  loop: true,
@@ -67,6 +69,7 @@
 		});
 	  });
 
+	  //добавление и удаление классов open, cl
 	  const formWrap = document.getElementById('form-wrap');
 	  const formOpen = document.getElementById('open');
 
@@ -79,6 +82,7 @@ function closeForm() {
 	formOpen.classList.remove('cl');
 }
 
+//функция модального окна
 function Modal() {
 
 	// Функция открытия модального окна
