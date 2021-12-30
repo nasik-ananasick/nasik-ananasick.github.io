@@ -27,10 +27,9 @@
 		html,
 		body{
 			font-family: Akrobat;
-			height: 100%;
 			background-image: url(фон.jpg);
 			background-attachment: fixed;
-			line-height: 24px;
+			line-height: 1.5;
 			color: white;
 		}
 		footer{
@@ -220,7 +219,7 @@
 				transition: all 0.3s ease 0s;
 			}
 			.content{
-				text-align: unset;
+				text-align: left;
 				position: relative;
 				padding-right:15%;
 				padding-left: 15%;
@@ -373,7 +372,7 @@
 				width: 100%;
 			}
 			.content{
-				text-align: unset;
+				text-align: left;
 				position: relative;
 				padding-right:5%;
 				padding-left: 5%;
@@ -414,10 +413,6 @@
 			}
 		}
 	
-			  
-
-		
-
 		.container1 {
                     
 			margin: 0 auto;
@@ -559,7 +554,7 @@ background-position: center;
 background-size: 100%;
 }
 		  
-.photozal1{
+.photozalimg{
 	position: relative;
 	width: 100%;
 	height: 40%;
@@ -940,15 +935,12 @@ p{
 	bottom: 0;
 }
 
-.modal__close:after {
-	transform: rotate(-45deg);
-}
-
 .author {
 	position: relative;
-	display: initial;
+	display: inline-block;
 	 min-height: 1px;
-	 padding-right: 9%;
-	 padding-left: 9%;
+	 padding-right: 1%;
+	 padding-left: 1%;
 	 font-size: 20px;
+	 text-align: center;
 }
