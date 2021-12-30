@@ -31,6 +31,7 @@
 			// еслииспользуется телефон, присваивается класс ._touch
 			document.body.classList.add('_touch');
 
+			//выпадающее меню
 			let menuArrows = document.querySelectorAll('.menu__arrow');
 			if (menuArrows.length > 0){
 				for (let i = 0; i < menuArrows.length; i++) {
@@ -41,7 +42,7 @@
 				}
 			}
 		} else {
-			// в противном случае версия браузера пользователя предназначена для пк, присваивается класс ._pc
+			// в противном случае присваивается класс ._pc
 			document.body.classList.add('_pc');
 		}
 
@@ -58,7 +59,7 @@
 		}
 
 
-	document.addEventListener( function () {
+	document.addEventListener('DOMContentLoaded', function () {
 		const slider = new ChiefSlider('.slider', {
 		  loop: true,
 		  autoplay: true,
