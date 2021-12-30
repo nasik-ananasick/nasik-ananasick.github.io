@@ -566,7 +566,7 @@ background-size: 100%;
 	
 }
 
-td {
+.zals {
 
 	align-self: justify;
 	width: 50%;
@@ -574,16 +574,6 @@ td {
 	padding: 3%;
 	
 }
-.td1 {
-
-	text-align: center;
-	font-size: 25px;
-	
-}
-.textini{
-	font-size: 25px;
-}
-
 
 li.content{
 	list-style-type: circle;
@@ -960,4 +950,5 @@ p{
 	 min-height: 1px;
 	 padding-right: 9%;
 	 padding-left: 9%;
+	 font-size: 20px;
 }
