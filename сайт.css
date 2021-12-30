@@ -408,9 +408,15 @@
 			  ul.information{
 				  list-style: none;
 			  }
+
+			  #myFooter {
+				text-align: center;
+			}
+		}
+	
 			  
 
-		}
+		
 
 		.container1 {
                     
@@ -819,13 +825,6 @@ p{
 	;
 }
 
-@media screen and (max-width: 767px) {
-    #myFooter {
-        text-align: center;
-    }
-}
-
-
 #myFooter{
    flex: 0 0 auto;
    -webkit-flex: 0 0 auto;
@@ -953,4 +952,12 @@ p{
 
 .modal__close:after {
 	transform: rotate(-45deg);
+}
+
+.author {
+	position: relative;
+	display: initial;
+	 min-height: 1px;
+	 padding-right: 9%;
+	 padding-left: 9%;
 }
