@@ -9,7 +9,11 @@
 		a {
 			text-decoration: none;
 		}
-		
+
+		h1{
+			font-size: 40px;
+	   }
+
 		h2,
 		h3,
 		h4,
@@ -39,19 +43,11 @@
 			padding-top: 10px;
 			padding-left: 30px;
 			padding-right: 30px;
-			padding-bottom: 30px;
+			padding-bottom: 20px;
 
 			
 		}
 
-		.foto{
-			display: inline-flex;
-		}
-		body._lock {
-			overflow: hidden;
-		}
-
-		
 		.abc {
 			min-height: 100%;
 			display: flex;
@@ -633,12 +629,9 @@ ul.sublist{
 }
 
  
- .foto1{
+ .img{
 	 width: 100%;
  }
- h1{
-	 font-size: 40px;
-}
 
 #form-wrap {
     display: none;
@@ -933,6 +926,10 @@ p{
 	margin: auto;
 	top: 0;
 	bottom: 0;
+}
+
+.modal__close:after {
+	transform: rotate(-45deg);
 }
 
 .author {
