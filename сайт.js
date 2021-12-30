@@ -1,9 +1,8 @@
 "use strict" //строгий режим
 
-		//инициализация переменной
-		const isMobile = {
+
+		const isMobile = { //добавляем методы
 			Android: function () {
-				//возвращение значения Android, если пользователь пользуется данной версией браузера
 				return navigator.userAgent.match(/Android/i);
 			},
 			BlackBerry: function () {
@@ -29,7 +28,7 @@
 		};
 
 		if (isMobile.any()) {
-			// если версия браузера пользователя предназначена для телефона, присваивается класс ._touch
+			// еслииспользуется телефон, присваивается класс ._touch
 			document.body.classList.add('_touch');
 
 			let menuArrows = document.querySelectorAll('.menu__arrow');
@@ -59,7 +58,7 @@
 		}
 
 
-	document.addEventListener('DOMContentLoaded', function () {
+	document.addEventListener( function () {
 		const slider = new ChiefSlider('.slider', {
 		  loop: true,
 		  autoplay: true,
@@ -94,18 +93,6 @@ function Modal() {
 	$(".modal__close").on("click", function() {
 
 		$(".modal-overlay").removeClass("modal-overlay_visible");
-
-	});
-
-	// Функция закрытия модального окна нажатием вне окна
-
-	$(document).on("click", function(e) {
-
-		if(!$(e.target).closest(".modal").length && !$(e.target).closest(".modal-link").length && $(e.target).closest(".modal-overlay").length) {
-
-			$(".modal-overlay").removeClass("modal-overlay_visible");
-
-		}
 
 	});
 

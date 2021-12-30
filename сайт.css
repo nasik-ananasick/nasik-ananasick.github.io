@@ -48,6 +48,10 @@
 			
 		}
 
+		body._lock {
+			overflow: hidden;
+		}
+
 		.abc {
 			min-height: 100%;
 			display: flex;
